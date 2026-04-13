@@ -90,17 +90,26 @@
         }
         .mobile-toggle {
             display: none;
-            background: none;
+            background: var(--surface);
             border: 1px solid var(--border);
-            padding: 0.4rem 0.65rem;
-            border-radius: 4px;
+            padding: 0.5rem 0.85rem;
+            border-radius: 6px;
             cursor: pointer;
+            color: var(--accent);
+            font-size: 1.5rem;
+            line-height: 1;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+        }
+        .mobile-toggle .fa {
+            display: inline-block;
+            min-width: 1.25em;
+            text-align: center;
         }
         @media (max-width: 900px) {
             .main-nav { display: none; width: 100%; }
             .main-nav.open { display: block; }
             .main-nav ul { flex-direction: column; align-items: flex-start; padding: 0.5rem 0; }
-            .mobile-toggle { display: block; }
+            .mobile-toggle { display: inline-flex; align-items: center; justify-content: center; }
             #header .inner { flex-wrap: wrap; }
         }
 
@@ -345,7 +354,7 @@
                 <strong>DSEI 2026</strong>
             </div>
             <button class="mobile-toggle" type="button" aria-label="Toggle menu" onclick="document.querySelector('.main-nav').classList.toggle('open')">
-                <i class="fa fa-bars"></i>
+                <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
             </button>
             <nav class="main-nav">
                 <ul>
