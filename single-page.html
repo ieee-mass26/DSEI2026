@@ -101,11 +101,9 @@
             box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
             -webkit-tap-highlight-color: transparent;
         }
-        .mobile-toggle .fa {
-            display: inline-block;
-            min-width: 1.25em;
-            text-align: center;
-            color: #111111;
+        .mobile-toggle-icon {
+            display: block;
+            flex-shrink: 0;
         }
         @media (max-width: 900px) {
             .main-nav { display: none; width: 100%; }
@@ -356,7 +354,11 @@
                 <strong>DSEI 2026</strong>
             </div>
             <button class="mobile-toggle" type="button" aria-label="Toggle menu" onclick="document.querySelector('.main-nav').classList.toggle('open')">
-                <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                <svg class="mobile-toggle-icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <circle cx="5" cy="12" r="2.5" fill="#111111"/>
+                    <circle cx="12" cy="12" r="2.5" fill="#111111"/>
+                    <circle cx="19" cy="12" r="2.5" fill="#111111"/>
+                </svg>
             </button>
             <nav class="main-nav">
                 <ul>

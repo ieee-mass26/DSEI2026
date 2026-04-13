@@ -92,11 +92,10 @@ a:hover { text-decoration: underline; }
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
     -webkit-tap-highlight-color: transparent;
 }
-.mobile-toggle .fa {
-    display: inline-block;
-    min-width: 1.25em;
-    text-align: center;
-    color: #111111;
+/* 内联 SVG 三点，不依赖 Font Awesome 字体（移动端 CDN 失败时仍可见） */
+.mobile-toggle-icon {
+    display: block;
+    flex-shrink: 0;
 }
 @media (max-width: 900px) {
     .main-nav { display: none; width: 100%; }
