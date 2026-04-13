@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DSEI 2026 — Call for Papers.">
+    <title>DSEI 2026 | Call for Papers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qcp1LVZCOMMf9vYdYUR8PP4NpKGXXN1nviwr1V6S16ctzsInVVBdyJ/44b/PACKGhFOyWWtN5kw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="dsei.css">
+</head>
+<body>
+    <header id="header">
+        <div class="inner">
+            <div class="brand">
+                <a href="index.html"><strong>DSEI 2026</strong></a>
+            </div>
+            <button class="mobile-toggle" type="button" aria-label="Toggle menu" onclick="document.querySelector('.main-nav').classList.toggle('open')">
+                <i class="fa fa-bars"></i>
+            </button>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cfp.html" class="active">Call for Papers</a></li>
+                    <li><a href="submission.html">Submission</a></li>
+                    <li><a href="registration.html">Registration</a></li>
+                    <li><a href="committee.html">Committee</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="hero-inner">
+            <p class="hero-kicker">Co-located with IEEE MASS 2026</p>
+            <h1>The 1st International Workshop on<br>Distributed and Secure Embodied Intelligence for Smart City Applications</h1>
+            <p style="opacity:0.95; max-width: 38rem; margin: 0 auto; font-size: 1rem;">
+                Bridging distributed systems, mobile ad-hoc networking, and embodied AI for the next generation of urban services.
+            </p>
+            <div class="hero-badges">
+                <span class="hero-badge"><i class="fa fa-map-marker"></i> The Hong Kong Polytechnic University, Hong Kong SAR, China</span>
+                <span class="hero-badge"><i class="fa fa-calendar"></i> October 21–23, 2026</span>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <div class="main-layout">
+            <div class="main-primary">
+                <section id="cfp">
+                    <div class="container">
+                        <h2>Call for Papers</h2>
+                        <p>
+                            We invite original contributions on emerging challenges including, but not limited to, the following tracks.
+                        </p>
+
+                        <div class="track card">
+                            <h3>Large-scale embodied perception and world models</h3>
+                            <ul class="clean">
+                                <li>Urban-scale foundation models: efficient deployment of VLA models for long-horizon navigation in non-stationary city environments.</li>
+                                <li>Physical intelligence and multi-modal world models for anticipating dynamic traffic and pedestrian patterns.</li>
+                                <li>Distributed spatial AI and SLAM: cooperative mapping and localization across heterogeneous agents via mobile ad-hoc networks.</li>
+                                <li>Active sensing and perception: information-theoretic viewpoint/sensor selection to reduce uncertainty in smart cities.</li>
+                            </ul>
+                        </div>
+
+                        <div class="track card">
+                            <h3>Networked embodied action and coordination</h3>
+                            <ul class="clean">
+                                <li>Communication-aware reinforcement learning under time-varying latency and packet loss in MANETs.</li>
+                                <li>Collaborative manipulation and transport: multi-robot coordination for complex urban tasks.</li>
+                                <li>Cross-platform sim-to-real transfer from urban digital twins to physical ad-hoc robotic fleets.</li>
+                                <li>Semantic inter-agent communication: exchanging intent and affordances instead of raw sensor data.</li>
+                            </ul>
+                        </div>
+
+                        <div class="track card">
+                            <h3>Edge-native systems for embodied intelligence</h3>
+                            <ul class="clean">
+                                <li>On-device inference for VLA models: hardware-aware optimization (quantization, pruning) for edge NPUs and mobile SoCs.</li>
+                                <li>Split-computing for embodied loops: dynamic partitioning between mobile agents and smart city edge servers.</li>
+                                <li>Energy-efficient embodied autonomy: balancing high-level reasoning with physical energy constraints.</li>
+                                <li>Real-time reasoning at the extreme edge for micro-embodied agents.</li>
+                            </ul>
+                        </div>
+
+                        <div class="track card">
+                            <h3>Secure and trustworthy embodied systems <em>(special focus)</em></h3>
+                            <ul class="clean">
+                                <li>Physical-world adversarial robustness (e.g., patch attacks on traffic signs, adversarial urban textures).</li>
+                                <li>Safe-critical control in crowded spaces: verifiable RL and safety layers for human–robot interaction.</li>
+                                <li>Privacy-preserving embodied analytics: federated learning without compromising citizen privacy.</li>
+                                <li>Resilient embodied mesh: safety and mission integrity under partitions or attacks on ad-hoc routing.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <aside class="main-sidebar" aria-labelledby="dates-heading">
+                <section id="dates" class="dates-sidebar-section">
+                    <div class="container">
+                        <h2 id="dates-heading">Important Dates</h2>
+                        <p class="lead">Workshop paper deadlines follow the <a href="https://mass-conf.github.io/2026/index.html">IEEE MASS 2026</a> schedule.</p>
+                        <div class="dates-grid">
+                            <div class="date-item">
+                                <strong>Workshop paper submission</strong>
+                                July 31, 2026
+                            </div>
+                            <div class="date-item">
+                                <strong>Notification</strong>
+                                August 15, 2026
+                            </div>
+                            <div class="date-item">
+                                <strong>Camera-ready</strong>
+                                August 31, 2026
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Copyright © 2026 DSEI.  All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        (function () {
+            var nav = document.querySelector('.main-nav');
+            nav.querySelectorAll('a').forEach(function (a) {
+                a.addEventListener('click', function () {
+                    if (window.innerWidth <= 900) nav.classList.remove('open');
+                });
+            });
+        })();
+    </script>
+</body>
+</html>

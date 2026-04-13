@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DSEI 2026 — The 1st International Workshop on Distributed and Secure Embodied Intelligence for Smart City Applications, co-located with IEEE MASS 2026.">
+    <meta name="keywords" content="DSEI 2026, IEEE MASS, Embodied Intelligence, Smart City, Edge AI, Mobile Ad-Hoc Networks, PolyU">
+    <title>DSEI 2026 | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qcp1LVZCOMMf9vYdYUR8PP4NpKGXXN1nviwr1V6S16ctzsInVVBdyJ/44b/PACKGhFOyWWtN5kw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="dsei.css">
+</head>
+<body>
+    <header id="header">
+        <div class="inner">
+            <div class="brand">
+                <a href="index.html"><strong>DSEI 2026</strong></a>
+            </div>
+            <button class="mobile-toggle" type="button" aria-label="Toggle menu" onclick="document.querySelector('.main-nav').classList.toggle('open')">
+                <i class="fa fa-bars"></i>
+            </button>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="cfp.html">Call for Papers</a></li>
+                    <li><a href="submission.html">Submission</a></li>
+                    <li><a href="registration.html">Registration</a></li>
+                    <li><a href="committee.html">Committee</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="hero-inner">
+            <p class="hero-kicker">Co-located with IEEE MASS 2026</p>
+            <h1>The 1st International Workshop on<br>Distributed and Secure Embodied Intelligence for Smart City Applications</h1>
+            <p style="opacity:0.95; max-width: 38rem; margin: 0 auto; font-size: 1rem;">
+                Bridging distributed systems, mobile ad-hoc networking, and embodied AI for the next generation of urban services.
+            </p>
+            <div class="hero-badges">
+                <span class="hero-badge"><i class="fa fa-map-marker"></i> The Hong Kong Polytechnic University, Hong Kong SAR, China</span>
+                <span class="hero-badge"><i class="fa fa-calendar"></i> October 21–23, 2026</span>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <div class="main-layout">
+            <div class="main-primary">
+                <section id="home">
+                    <div class="container">
+                        <h2>Welcome to DSEI 2026</h2>
+                        <p class="lead">
+                            The 1st International Workshop on Distributed and Secure Embodied Intelligence for Smart City Applications (DSEI 2026) is co-located with the 23rd IEEE International Conference on Mobile Ad-Hoc and Smart Systems (IEEE MASS 2026), and will be held on October 21–23, 2026 at The Hong Kong Polytechnic University, Hong Kong SAR, China.
+                        </p>
+                        <p>
+                            The workshop will focus on frontier topics in both the theoretical and applied aspects of embodied intelligence, distributed perception and world modeling, mobile ad-hoc and smart systems, edge-native inference and split computing, and secure and trustworthy operation of embodied agents in urban environments, while particularly encouraging and supporting research that explores the intersection of these fields with smart city applications.
+                        </p>
+                        <p>
+                            This includes, but is not limited to, studies on large-scale perception and world models for long-horizon navigation, communication-aware learning under time-varying latency and packet loss, collaborative multi-robot coordination and sim-to-real transfer, on-device and edge deployment of vision-language-action models, privacy-preserving embodied analytics, adversarial robustness and safety-critical control, and resilient multi-agent operation under network partitions or attacks.
+                        </p>
+                        <p>
+                            It is organized by members of the Department of Computing at The Hong Kong Polytechnic University (PolyU). As a focused international workshop, it aims to provide an innovative platform for academic exchange among students, faculty members, researchers, and industry professionals from across the globe who work on distributed and secure embodied intelligence for smart cities.
+                        </p>
+                        <p style="margin-top: 1.25rem;"><strong>Welcome to DSEI 2026!</strong></p>
+                    </div>
+                </section>
+            </div>
+
+            <aside class="main-sidebar" aria-labelledby="dates-heading">
+                <section id="dates" class="dates-sidebar-section">
+                    <div class="container">
+                        <h2 id="dates-heading">Important Dates</h2>
+                        <p class="lead">Workshop paper deadlines follow the <a href="https://mass-conf.github.io/2026/index.html">IEEE MASS 2026</a> schedule.</p>
+                        <div class="dates-grid">
+                            <div class="date-item">
+                                <strong>Workshop paper submission</strong>
+                                July 31, 2026
+                            </div>
+                            <div class="date-item">
+                                <strong>Notification</strong>
+                                August 15, 2026
+                            </div>
+                            <div class="date-item">
+                                <strong>Camera-ready</strong>
+                                August 31, 2026
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Copyright © 2026 DSEI.  All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        (function () {
+            var nav = document.querySelector('.main-nav');
+            nav.querySelectorAll('a').forEach(function (a) {
+                a.addEventListener('click', function () {
+                    if (window.innerWidth <= 900) nav.classList.remove('open');
+                });
+            });
+        })();
+    </script>
+</body>
+</html>
