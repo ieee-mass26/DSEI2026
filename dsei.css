@@ -298,6 +298,74 @@ ul.clean li { margin: 0.35rem 0; }
     color: var(--accent);
     margin-top: 0;
 }
+.submission-cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.25rem;
+    border-color: rgba(13, 79, 108, 0.22);
+    background: linear-gradient(135deg, #ffffff 0%, var(--accent-soft) 100%);
+}
+.submission-cta h3 {
+    margin: 0.15rem 0 0.35rem;
+    color: var(--text);
+}
+.submission-cta p {
+    margin: 0;
+    color: var(--muted);
+}
+.submission-label {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+}
+.button-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.45rem;
+    min-width: 170px;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    background: var(--accent);
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
+    box-shadow: 0 8px 18px rgba(13, 79, 108, 0.18);
+}
+.button-link:hover {
+    background: #0a4058;
+    color: #ffffff;
+    text-decoration: none;
+}
+.submission-details {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+.submission-details .card {
+    margin: 0;
+}
+.submission-note {
+    margin-top: 1.25rem;
+    color: var(--muted);
+}
+@media (max-width: 760px) {
+    .submission-cta {
+        align-items: stretch;
+        flex-direction: column;
+    }
+    .button-link {
+        width: 100%;
+    }
+    .submission-details {
+        grid-template-columns: 1fr;
+    }
+}
 .people-grid {
     display: grid;
     gap: 1rem;
